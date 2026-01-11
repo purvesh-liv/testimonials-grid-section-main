@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:  hsl(214, 17%, 92%);
+    font-size: 13px;
+    font-family: "Barlow Semi Condensed";
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0rem;
+    gap: 2rem;
+}
+img{
+    border-radius: 50%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    max-width: 55%;
+    height: auto;
+    padding: 2.6rem 2rem;
+    border-radius: 7px;
+}
+.one{
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+}
+.two{
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+}
+.three{
+    background-color: hsl(0, 0%, 100%);
+}
+.four{
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(214, 17%, 92%);
+}
+.five{
+    background-color: hsl(0, 0%, 100%);
+}
+.profile{
+    display: flex;
+}
