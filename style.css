@@ -13,19 +13,24 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4rem 0rem;
+    padding: 4rem 2rem;
     gap: 2rem;
 }
 img{
     border-radius: 50%;
+     width: 32px;
+    height: 32px;
+    border: 1px solid hsl(0, 0%, 81%);
 }
 .card{
     display: flex;
     flex-direction: column;
-    max-width: 55%;
+    max-width: 100%;
     height: auto;
     padding: 2.6rem 2rem;
     border-radius: 7px;
+    gap: 1rem;
+    box-shadow: 0 0 15px rgb(0, 0,0,0.2);
 }
 .one{
     background-color: hsl(263, 55%, 52%);
@@ -40,11 +45,54 @@ img{
 }
 .four{
     background-color: hsl(219, 29%, 14%);
-    color: hsl(214, 17%, 92%);
+    color: hsl(224, 10%, 45%);
 }
 .five{
     background-color: hsl(0, 0%, 100%);
 }
 .profile{
     display: flex;
+    gap:0.8rem
+}
+.sec-text-profile{
+    color: hsl(0, 0%, 81%);
+    
+}
+.white{
+    color: hsl(0, 0%, 81%);
+}
+.black{
+    color: hsl(224, 10%, 45%);
+}
+@media (min-width: 1024px){
+    .container{
+        display: grid;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        grid-auto-rows: 1fr;
+        grid-template-areas:
+            "one one two five"
+            "three four four five";
+    }
+
+     
+    .one{
+        grid-area:one ;
+    }
+    .two{
+        grid-area: two;
+    }
+    .three{
+        grid-area: three;
+    }
+    .four{
+        grid-area: four;
+    }
+    .five{
+        grid-area: five;
+        height: 100%;
+    }
 }
